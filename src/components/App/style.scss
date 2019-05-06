@@ -1,0 +1,137 @@
+/*Color palette*/
+$color-1: #05386b;
+$color-2: #379683;
+$color-3: #5cdb95;
+$color-4: #bee4af;
+$color-5: #edf5e1;
+
+/*fonts*/
+$primary-font: 'Barrio';
+$secondary-font: 'Baloo';
+$tertiary-font: 'Raleway';
+
+/*Breakpoints*/
+
+$tablet-min: 768px;
+$desktop-min: 1024px;
+
+.App {
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+
+  .introduction {
+    height: 33.3%;
+    padding: 1rem;
+
+    font-size: 4rem;  
+    background-color: $color-2;
+      
+      h1 {
+        padding: 2.2rem 0.1rem;
+        margin: 0rem;
+
+        font-family: $primary-font;
+        color:$color-5;
+      }
+      /*put a d3 animation of a driving car*/
+  }  
+
+  .workflow {
+    height: 33.3%;
+    padding: 1rem;
+
+    background-color: $color-4;
+
+    h3 {
+      padding: 0px;
+      margin: 0px;
+
+      font-family: $secondary-font;
+      font-size: 2.5rem;
+      color:$color-1;
+      text-transform: uppercase;
+     
+    }
+
+    ul{
+      padding: 0 1.6rem;
+      font-size: 1.1rem;
+
+
+      li {
+        padding-bottom: 1rem;
+
+        color:$color-2;
+        font-family: $tertiary-font;
+        font-weight: bold;
+        line-height: 1.5rem;
+
+
+      }
+    }
+
+  }
+
+  .contactUs {
+    height: 33.3%;
+    padding: 1rem 1rem 2.5rem;
+
+    background-color: $color-5;
+
+    h3 {
+      padding: 0px;
+      margin: 0px;
+
+      font-family: $secondary-font;
+      font-size: 2rem;
+      color:$color-1;
+      text-transform: uppercase;
+     
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 1.2rem;
+        font-family: $secondary-font;
+        color:$color-2;
+      }
+
+      input {
+        width: 100%;
+
+      }
+
+      textarea {
+        width: 100%;
+        padding: 0 0 2rem;
+        resize: none;
+
+      }
+
+      #formSection {
+        margin-bottom: 1rem;
+      }
+
+      button {
+        width: 100%;
+        border-radius: 0.2rem;
+        padding: 0.1rem;
+
+        background-color: $color-3;
+        cursor: pointer;
+
+        font-family: $secondary-font;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+

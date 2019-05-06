@@ -1,25 +1,44 @@
 import React, { Component } from 'react';
-import './style.css';
+import './style.scss';
 
-import ReactContactForm from 'react-mail-form';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <section className="introduction">
-       <h1>Hire a driver in Ghana</h1>
+       <section className="introduction">
+         <h1>Hire a driver in Ghana</h1>
         </section>
 
-       <section className="workflow">
-       <h3>Let us know what you want and we will do the rest</h3>
-       <h4>Whether you need a car or a minibus we gotchu!</h4>
-       </section>
+        <section className="workflow">
+         <h3>How it works</h3>
+          <ul>
+           <li>Fill in the contact form below telling us details of what you require</li>
+           <li>We will then reach out to contacts on the ground in Ghana for a price estimate</li>
+           <li>Once details are finalised we will ask you to pay a non refundable deposit of £10 to secure your trip</li>
+           <li>We will keep in touch with you in the run up to your trip with us</li>
+          </ul>
+        </section>
 
-       <section className="contact us">
-       <h3>Contact us</h3>
-       <ReactContactForm to="adelekufour@gmail.com" />
-       </section>
+         <section className="contactUs">
+          <h3>Send a Request</h3>
+            <form className="contact-form" >
+             <label className="message-name" htmlFor="message-name">First Name</label>
+              <input id="formSection" name="name" className="message-name" type="text" required/>
+
+              <label className="message-name" htmlFor="message-name">Surname Name</label>
+              <input id="formSection" name="name" className="message-name" type="text" required/>
+
+              <label className="message-email" htmlFor="message-email">Your Email</label>
+              <input id="formSection" name="email" className="message-email" type="email" required/>
+
+              <label className="message" htmlFor="message-input">Details of your request</label>
+              <textarea id="formSection" name="message" className="message-input" type="text" required/>
+
+              <button type="submit" className="button button-primary">Submit</button>
+
+            </form>
+         </section>
       </div>
     );
   }
