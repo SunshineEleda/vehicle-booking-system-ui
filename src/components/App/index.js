@@ -6,10 +6,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-       <section className="introduction">
+       <header className="introduction">
          <h1>Hire a driver in Ghana</h1>
-        </section>
+        </header>
 
+       <main>
         <section className="workflow">
          <h3>How it works</h3>
           <ul>
@@ -26,7 +27,7 @@ class App extends Component {
              <label className="message-name" htmlFor="message-name">First Name</label>
               <input id="formSection" name="name" className="message-name" type="text" required/>
 
-              <label className="message-name" htmlFor="message-name">Surname Name</label>
+              <label className="message-name" htmlFor="message-name">Surname</label>
               <input id="formSection" name="name" className="message-name" type="text" required/>
 
               <label className="message-email" htmlFor="message-email">Your Email</label>
@@ -39,6 +40,7 @@ class App extends Component {
 
             </form>
          </section>
+        </main>
       </div>
     );
   }
